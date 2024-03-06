@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'minimal'; /* Nom de la police */
+    src: 
+        url('fonts/minimal_V3-Book.otf') format('opentype'),
+  }
+
+body{
+    background-image: url('assets/Fond-jaune-rose.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'minimal', sans-serif; /* Utilisation de la police personnalisée */
+}
+/* Styles pour la barre de navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E1BAD8;
+    padding: 10px;
+    z-index: 1000; /* Assurez-vous que la navbar a un z-index plus élevé */
+  }
+  
+  /* Styles pour le logo */
+  .navbar-logo img {
+    width: 150px; /* Ajustez la taille du logo selon vos besoins */
+  }
+  
+  /* Styles pour le dropdown */
+  .navbar-dropdown {
+    position: relative;
+  }
+  
+  .dropdown-btn {
+    background-color: #E1BAD8;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-btn img {
+    width: 20px; /* Ajustez la taille de l'icône du dropdown */
+    margin-right: 5px; /* Espacement entre l'icône et le texte */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Assurez-vous que le dropdown a un z-index plus élevé */
+    right: 0; /* Décalage à partir du bord droit */
+    margin-right: 10px; /* Décalage supplémentaire pour ajuster */
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-content a img {
+    width: 20px; /* Ajustez la taille de l'icône d'option */
+    margin-right: 5px; /* Espacement entre l'icône et le texte */
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Afficher le contenu du dropdown au survol */
+  .navbar-dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  .sections {
+    margin-top: 70px; /* La hauteur de la barre de navigation */
+    padding: 20px; /* Ajout de padding pour l'espace autour de la section */ 
+    background-color: white;
+}
+
+  
+  
+  .sections h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .sections ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sections li {
+    margin-bottom: 5px;
+  }
+  
+  /* Styles spécifiques pour le menu enfants */
+  .menu-enfants {
+    position: relative;
+  }
+  
+  .menu-enfants .prix {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.sans-margin-top{
+  margin-top: 0;
+}
+
+.italique{
+    font-style: italic;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.center{
+    text-align: center;
+}
+
+.prix {
+    position: absolute;
+    right: 0;
+    width: 40px; /* Définir une largeur fixe pour tous les prix */
+    text-align: right; /* Alignement du texte à droite */
+  }
+  
+  .prix-glace {
+    text-align: right;
+    position: absolute;
+    width: 50px;
+    right: 0; 
+    left: 103%;
+  }
+  
+  .plats-fixes li,
+  .a-partager li,
+  .desserts li {
+    position: relative;
+    padding-right: 60px; /* Pour laisser de l'espace pour les prix */
+  }
+  
+/* Styles pour le logo "veggie" */
+.logo-veggie {
+    display: inline-block;
+    width: 20px; /* Ajustez la taille du logo selon vos besoins */
+    height: 20px; /* Ajustez la taille du logo selon vos besoins */
+    background-image: url("assets/veggie-logo.png");
+    background-size: contain; /* Ajustez la taille du logo pour qu'il s'adapte à la zone définie */
+    background-repeat: no-repeat; /* Assurez-vous que le logo ne se répète pas */
+    margin-right: 5px; /* Espacement entre le logo et le texte du plat */
+  }
